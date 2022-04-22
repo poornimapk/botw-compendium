@@ -15,87 +15,82 @@ html {
   font-family: 'Medula One', cursive;
 }
 
+body {
+  background-color: black;
+}
 #banner {
-  background-image: url('https://i.imgur.com/ZnqdqBW.png');
-  background-color: rgb(63, 62, 62);
   display: flex;
-  flex-flow: row wrap;  
-  justify-content: flex-end;  
-  /* background: linear-gradient(transparent, black), url('https://i.imgur.com/ZnqdqBW.png');
-  background-size: cover; */
- /*  background-image: url('https://i.imgur.com/ZnqdqBW.png'), 
-                      -moz-linear-gradient(top, #ADB2B6 0%, #ABAEB3 100%);
-    background-image: url('https://i.imgur.com/ZnqdqBW.png'), 
-                      -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ADB2B6), color-stop(100%, #ABAEB3));
-    background-image: url('https://i.imgur.com/ZnqdqBW.png'), 
-                      linear-gradient(to bottom, #ADB2B6, #ABAEB3); */
+  flex-direction: column;  
+  background-image: url('https://i.imgur.com/1DWvF76.png'), url('https://i.imgur.com/ZnqdqBW.png');
+  background-position: right top, left;
+  background-repeat: no-repeat, repeat;
+  background-size: 15% 100%, contain;
+  background-color: rgb(63, 62, 62);  
 }
 
 h1 {
-  margin: 0%;
+  margin: 0 0 0 1%;
   font-size: 4rem;
   color: white;
-  align-items: flex-end;
 }
 
-.logo {
-  width: 10%;
-  height: 10%;
-}
-
-#enemies {
-  
-  background-color: rgb(63, 62, 62);
+#nav-details {
   display: flex;
-  flex-flow: row wrap;  
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  height: 5vh; 
-  padding-bottom: 4%;
+  flex-direction: column;
 }
 
-h2 {
-  margin: 0%;
-  font-size: 2.5rem;
+#nav-ul {
+  display: flex;
+  list-style: none;
+}
+.nav-li{
+  margin-left: 5%;
+  width: 10%;
+  flex: 0 0 auto;
+}
+.nav-li > a {
+  text-decoration: none;
+  font-size: 1.5rem;
   color: white;
-  
+}
+.nav-li > a:hover {
+  color: lightseagreen;
 }
 
 #secBody {
   display: flex;
-  width: 100%;
+  flex-direction: row;
+  width: 80%;
   height: 77vh;
-  flex-flow: row wrap;
+  margin-left: 5%;
+  /* flex-flow: row wrap;
   justify-content: space-evenly;
-  flex-basis: 20px;
+  flex-basis: 20px; */
   background-color: rgba(240,221,189);
+  border: 1px solid green;
 }
 
 #secBodyLeft {
-  width: 40%;
+  width: 50%;
   height: 100%;
  
   box-shadow:
        inset 0 -3em 3em rgba(0,0,0,0.1),
              0 0  0 2px rgb(255,255,255),
-             0.3em 0.3em 1em rgba(0,0,0,0.3);
+             0.3em 0.3em 1em rgba(0,0,0,0.3);  
   
-  
-}
-
-.secBodyLeftDiv1 {
-  width: 100%;
-  height: 10%;
-  border: 1px solid red;
 }
 
 .full-image {
   width: 100%;
-  height: 60%;
-  border: 1px solid red;
+  height: 100%;
 }
 
+#monster-img {
+  width: 100%;
+  height: 100%;
+}
+/* 
 .thumb-bar {
   width: 100%;
   height: 30%;
@@ -108,14 +103,29 @@ h2 {
   font-size: 2rem ;
   align-items: center;
 }
-
+ */
 #secBodyRight {
-  width: 40%;
+  width: 50%;
   height: 100%;
   box-shadow:
        inset 0 -3em 3em rgba(0,0,0,0.1),
              0 0  0 2px rgb(255,255,255),
              0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+#enemy-stats {
+  text-align: center;
+  border: 1px solid brown;
+}
+.columns {
+  font-size: 1.5rem;
+  padding-left: 10%;
+  width: 60%;
+  height: 40%;
+}
+
+#name, #locations, #drops {
+  padding-left: 10%;
 }
 /******************************************
 /* ADDITIONAL STYLES

@@ -16,15 +16,16 @@
 	</head>
 	<body>
 		<header id="banner">
-			<h1 class="heading">Legend of Zelda: Breath of the Wild</h1>
-			<img src="https://i.imgur.com/1DWvF76.png" alt="BOTW Logo" class="logo">
+			<div id="banner-div">
+				<h1 class="heading">Legend of Zelda: Breath of the Wild</h1>				
+			</div>			
 			<nav id="nav-details">
-				<ul>
-					<li><a href="">Monsters</a></li>
-					<li><a href="">Equipment</a></li>
-					<li><a href="">Creatures</a></li>
-					<li><a href="">Materials</a></li>
-					<li><a href="">Treasure</a></li>
+				<ul id="nav-ul">
+					<li class="nav-li"><a href="">Monsters</a></li>
+					<li class="nav-li"><a href="">Equipment</a></li>
+					<li class="nav-li"><a href="">Creatures</a></li>
+					<li class="nav-li"><a href="">Materials</a></li>
+					<li class="nav-li"><a href="">Treasure</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -36,7 +37,7 @@
 			<section id="secBodyLeft">				
 				<div class="full-image">
 					<!-- <button class="enemyParentPrev"></button> -->
-					<img src="" alt="Monster Image" class="enemyParentImg">
+					<img id="monster-img" src="https://botw-compendium.herokuapp.com/api/v2/entry/moblin/image" alt="Monster Image">
 					<!-- <button class="enemyParentNext">></button> -->
 				</div>
 				<!-- <div class="thumb-bar">
@@ -48,21 +49,19 @@
 				</div> -->
 			</section>
 			<section id="secBodyRight">
-				<table>
-					<tr>
-						<th>Enemy Stats</th>
+				<h2 id="enemy-stats">Enemy Stats</h2>
+				<table id="section-table">					
+					<tr id="rows">
+						<td class="columns">Enemy</td>
+						<td id="name">Enemy name</td>
 					</tr>
-					<tr>
-						<td>Enemy</td>
-						<td>Enemy name</td>
+					<tr id="rows">
+						<td class="columns">Map Locations</td>
+						<td id="locations">Map locations csv</td>
 					</tr>
-					<tr>
-						<td>Map Locations</td>
-						<td>Map locations csv</td>
-					</tr>
-					<tr>
-						<td>Drops</td>
-						<td>Drops csv</td>
+					<tr id="rows">
+						<td class="columns">Drops</td>
+						<td id="drops">Drops csv</td>
 					</tr>
 				</table>
 			</section>
