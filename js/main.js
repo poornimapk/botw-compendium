@@ -1,6 +1,5 @@
 let monsters = [];
 let currentMonsterIndex = 0;
-let nIntervId;
 
 window.onload = async (event) => {
     await serviceLayer();
@@ -27,10 +26,6 @@ function serviceLayer() {
 
 function displayMonster() {
     console.log('Before ' + currentMonsterIndex);
-    if(currentMonsterIndex >= monsters.length) {
-        currentMonsterIndex = 0;
-    }
-    console.log(monsters[0].image);
     let movieImg = document.getElementById('monster-img');
     let enemyName = document.getElementById('name');
     let locations = document.getElementById('locations');
@@ -46,7 +41,5 @@ function displayMonster() {
     monsters[currentMonsterIndex].drops.forEach((drop) => {        
         tempDrops += drop + ', ';
     })
-    drops.innerText = tempDrops;
-    currentMonsterIndex++;       
-    console.log('After ' + currentMonsterIndex);
+    drops.innerText = tempDrops; 
 }

@@ -32,40 +32,49 @@
 		<!-- <div id="enemies">
 			<h2 class="enemiesH2">Monsters</h2>
 		</div> -->
-		
-		<section id="secBody">
-			<section id="secBodyLeft">				
-				<div class="full-image">
-					<!-- <button class="enemyParentPrev"></button> -->
-					<img id="monster-img" src="https://botw-compendium.herokuapp.com/api/v2/entry/moblin/image" alt="Monster Image">
-					<!-- <button class="enemyParentNext">></button> -->
-				</div>
-				<!-- <div class="thumb-bar">
-					<button><</button>
-					<img src="" alt="Type 1">
-					<img src="" alt="Type 2">
-					<img src="" alt="Type 3">
-					<button>></button>
-				</div> -->
+		<main>
+			<div class="div-left">
+				<img src="/img/left-arrow.png" class="arrow-left" alt="Left Arrow">
+			</div>
+			<section id="secBody">
+				
+				<section id="secBodyLeft">				
+					<div class="full-image">
+						<!-- <button class="enemyParentPrev"></button> -->
+						<img id="monster-img" src="https://botw-compendium.herokuapp.com/api/v2/entry/moblin/image" alt="Monster Image">
+						<!-- <button class="enemyParentNext">></button> -->
+					</div>
+					<!-- <div class="thumb-bar">
+						<button><</button>
+						<img src="" alt="Type 1">
+						<img src="" alt="Type 2">
+						<img src="" alt="Type 3">
+						<button>></button>
+					</div> -->
+				</section>
+				<section id="secBodyRight">
+					<h2 id="enemy-stats">Enemy Stats</h2>
+					<table id="section-table">					
+						<tr id="rows">
+							<td class="columns">Enemy</td>
+							<td id="name">Enemy name</td>
+						</tr>
+						<tr id="rows">
+							<td class="columns">Map Locations</td>
+							<td id="locations">Map locations csv</td>
+						</tr>
+						<tr id="rows">
+							<td class="columns">Drops</td>
+							<td id="drops">Drops csv</td>
+						</tr>
+					</table>
+				</section>
+				
 			</section>
-			<section id="secBodyRight">
-				<h2 id="enemy-stats">Enemy Stats</h2>
-				<table id="section-table">					
-					<tr id="rows">
-						<td class="columns">Enemy</td>
-						<td id="name">Enemy name</td>
-					</tr>
-					<tr id="rows">
-						<td class="columns">Map Locations</td>
-						<td id="locations">Map locations csv</td>
-					</tr>
-					<tr id="rows">
-						<td class="columns">Drops</td>
-						<td id="drops">Drops csv</td>
-					</tr>
-				</table>
-			</section>
-		</section>
+			<div class="div-right">
+				<img src="/img/right-arrow.png" class="arrow-right" alt="Right Arrow">
+			</div>
+		</main>
 		
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
