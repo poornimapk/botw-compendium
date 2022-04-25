@@ -25,7 +25,7 @@ function serviceLayer() {
 }
 
 function displayMonster() {
-    console.log('Before ' + currentMonsterIndex);
+    console.log('Before Display index' + currentMonsterIndex);
     let movieImg = document.getElementById('monster-img');
     let enemyName = document.getElementById('name');
     let locations = document.getElementById('locations');
@@ -42,4 +42,28 @@ function displayMonster() {
         tempDrops += drop + ', ';
     })
     drops.innerText = tempDrops; 
+}
+
+const leftArrow = document.getElementById('arrow-left');
+leftArrow.addEventListener('click', leftArrowClicked);
+
+function leftArrowClicked() {
+    if(currentMonsterIndex < 0) {
+        currentMonsterIndex = 0;
+    } else {
+        currentMonsterIndex--;
+    }
+    displayMonster();
+}
+
+const rightArrow = document.getElementById('arrow-right');
+rightArrow.addEventListener('click', rightArrowClicked);
+
+function rightArrowClicked() {
+    if(currentMonsterIndex >= monsters.length) {
+        currentMonsterIndex = 0;
+    } else {
+        currentMonsterIndex++;
+    }
+    displayMonster();
 }

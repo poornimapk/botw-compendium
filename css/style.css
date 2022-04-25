@@ -68,16 +68,16 @@ main {
   margin-top: 15%;
   position: absolute;
 }
-.arrow-left {
+#arrow-left {
   width: 100%;
   height: 100%;
 }
 
-.arrow-left:hover {
+#arrow-left:hover {
   cursor: pointer;
 }
 
-.arrow-right:hover {
+#arrow-right:hover {
   cursor: pointer;
 }
 
@@ -89,7 +89,7 @@ main {
   margin-left: 90%;
 }
 
-.arrow-right {
+#arrow-right {
   width: 100%;
   height: 100%;
 }
